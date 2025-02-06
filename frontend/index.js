@@ -2,6 +2,9 @@ const BACKEND_URL = 'https://vd-form-backend.onrender.com';
 
 async function handleSubmit(e) {
   e.preventDefault();
+
+  const form = e.target; 
+  
   const formData = {
     firstName: document.querySelector('input[type="text"]').value,
     starter: document.querySelector('input[name="starter"]:checked').value,
